@@ -1,0 +1,88 @@
+*,
+*:before,
+* :after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-slate-300: hsl(212, 45%, 89%);
+  --color-slate-500: hsl(216, 15%, 48%);
+  --color-slate-900: hsl(218, 44%, 22%);
+  --font-primary: "Outfit", serif;
+}
+
+html,
+body {
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  background: var(--color-slate-300);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-container {
+  width: 320px;
+  height: 499px;
+  margin-top: 10rem;
+  background-color: var(--color-white);
+  color: black;
+  border-radius: 20px;
+  padding: 16px 16px 40px 16px;
+  text-align: center;
+}
+
+.qr-code img {
+  border-radius: 20px;
+  height: 288px;
+  width: 288px;
+}
+
+.qr-title {
+  color: var(--color-slate-900);
+  font-size: 22px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  line-height: 26.4px;
+  word-wrap: break-word;
+  padding-top: 24px;
+}
+
+.qr-text {
+  color: var(--color-slate-500);
+  font-size: 15px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+  word-wrap: break-word;
+  padding-top: 16px;
+}
+
+@media (max-width: 375px) {
+  .qr-container {
+    margin: 10rem auto;
+  }
+}
